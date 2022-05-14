@@ -2,7 +2,9 @@
 HP ZBook Fury Elan Touchpad tools for Linux Mint
 
 ## Overview
-The new HP ZBook Laptop is an excellent option for Linux Mint Users; however, if you do not order Linux pre-installed, then you will need to upgrade the kernel to use the full features of the laptop. Below, I will give my specifications, grub settings, and my touchpad enable / disable script for your perusal. I hope that it helps.
+The new HP ZBook Laptop is an excellent option for Linux Mint Users; however, if you do not order Linux pre-installed, then you will need to upgrade the kernel to use the full features of the laptop. Use the update manager to upgrade the kernel automatically. It does an excellent job.
+
+Below, I will give my specifications, grub settings, and my touchpad enable / disable script for your perusal. I hope that it helps.
 
 ## Specifications
 ```
