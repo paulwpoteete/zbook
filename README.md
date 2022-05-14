@@ -7,6 +7,7 @@ The new HP ZBook Laptop is an excellent option for Linux Mint Users; however, if
 ## Specifications
 ```
 $ inxi -F
+
 System:    Host: furyfoo Kernel: 5.13.0-40-generic x86_64 bits: 64 Desktop: Cinnamon 5.2.7 Distro: Linux Mint 20.3 Una 
 Machine:   Type: Laptop System: HP product: HP ZBook Fury 17.3 inch G8 Mobile Workstation PC v: N/A 
            serial: <superuser/root required> 
@@ -39,8 +40,9 @@ Sensors:   System Temperatures: cpu: 42.0 C mobo: 40.0 C gpu: nvidia temp: 41 C
 Info:      Processes: 422 Uptime: 4d 5h 04m Memory: 31.10 GiB used: 8.43 GiB (27.1%) Shell: bash inxi: 3.0.38 
 ```
 ## XINPUTS
-
+```
 $ xinput
+
 ⎡ Virtual core pointer                    	id=2	[master pointer  (3)]
 ⎜   ↳ Virtual core XTEST pointer              	id=4	[slave  pointer  (2)]
 ⎜   ↳ ELAN0750:00 04F3:313A                   	id=19	[slave  pointer  (2)]
@@ -59,8 +61,9 @@ $ xinput
     ↳ AT Translated Set 2 keyboard            	id=22	[slave  keyboard (3)]
     ↳ HP Wireless hotkeys                     	id=23	[slave  keyboard (3)]
     ↳ HP WMI hotkeys                          	id=24	[slave  keyboard (3)]
-
+```
 ## GRUB
+```
 $ cat /etc/default/grub | grep -Ev "^$|^#"
 
 GRUB_DEFAULT=0
@@ -69,8 +72,9 @@ GRUB_TIMEOUT=0
 GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 GRUB_CMDLINE_LINUX="net.ifnames=0 ipv6.disable=1"
-
+```
 ## Touchpad Tools
+```
 $ cat /opt/elan_touchpad.sh 
 
 #!/bin/bash
@@ -99,8 +103,9 @@ then
 else
 	echo -e "Usage:\n\t$0 enable\n\t\tor\n\t$0 disable"
 fi
-
+```
 ## Touchpad Desktop Icons
+```
 $ cat *able.desktop 
 
 #!/usr/bin/env xdg-open
@@ -128,3 +133,4 @@ Exec=/opt/elan_touchpad.sh enable
 Icon=input-touchpad
 Name[en_US]=Elan Touchpad Enable
 Icon[en_US]=input-touchpad
+```
