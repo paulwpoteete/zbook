@@ -5,6 +5,7 @@ HP ZBook Fury Elan Touchpad tools for Linux Mint
 The new HP ZBook Laptop is an excellent option for Linux Mint Users; however, if you do not order Linux pre-installed, then you will need to upgrade the kernel to use the full features of the laptop. Below, I will give my specifications, grub settings, and my touchpad enable / disable script for your perusal. I hope that it helps.
 
 ## Specifications
+```
 $ inxi -F
 System:    Host: furyfoo Kernel: 5.13.0-40-generic x86_64 bits: 64 Desktop: Cinnamon 5.2.7 Distro: Linux Mint 20.3 Una 
 Machine:   Type: Laptop System: HP product: HP ZBook Fury 17.3 inch G8 Mobile Workstation PC v: N/A 
@@ -36,7 +37,7 @@ Partition: ID-1: / size: 914.76 GiB used: 131.73 GiB (14.4%) fs: ext4 dev: /dev/
 Sensors:   System Temperatures: cpu: 42.0 C mobo: 40.0 C gpu: nvidia temp: 41 C 
            Fan Speeds (RPM): N/A 
 Info:      Processes: 422 Uptime: 4d 5h 04m Memory: 31.10 GiB used: 8.43 GiB (27.1%) Shell: bash inxi: 3.0.38 
-
+```
 ## XINPUTS
 
 $ xinput
